@@ -1,0 +1,6 @@
+sample usage
+
+$ fab --hide running,status,output,warnings --set hosts_file=yourhostfile -P check_vim --user=youuser -p `cat ~/foobarcredentials` -z 5
+
+this will run to check if there's installed vim on your server (as set in fabfile.py) on all servers list on your hostfile
+
