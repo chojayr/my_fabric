@@ -1,6 +1,6 @@
 sample usage
 
-$ fab --hide running,status,output,warnings --set hosts_file=yourhostfile -P check_vim --user=youuser -p `cat ~/foobarcredentials` -z 5
+$ fab --set hosts_file=your_hostfile -P yourtask --user=your_user -p `cat ~/foobarcredentials` -z 5
 
-this will run to check if there's installed vim on your server (as set in fabfile.py) on all servers list on your hostfile
+this will run the task you set on fabfile and execute on your server (as set in fabfile.py) on all servers list on your hostfile
 
